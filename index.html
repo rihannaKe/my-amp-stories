@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+        .btn {
+            background-color: rgb(21, 89, 109);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+   
+</head>
+
+<body>
+
+    <h2>Amp stories</h2>
+    <div>
+        <button class="btn" onclick="goToUrl('/biography')">Biography</button>
+    </div>
+    <div>
+        <button class="btn" onclick="goToUrl('www.google.com')">Default Button</button>
+    </div>
+
+    <script type="text/javascript">
+        function goToUrl(url){
+            window.open(url,'_blank');
+        }
+    </script>
+</body>
+
+</html>

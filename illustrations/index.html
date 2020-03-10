@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .child {
+        height: 300px; 
+        flex: 1;
+        /* min-width: 25%; */
+        border: 5px solid white;
+        margin:10px;
+        box-shadow: 10px 5px 5px black;
+    }
+
+    @media (min-width: 500px) {
+        .child {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .child {
+            width: 33.33%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .child {
+            width: 33.33%;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .child {
+            width: 25%;
+        }
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    .mySlides img {
+        width: 100%;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <h2 style="text-align:center">Illustrations Gallery</h2>
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- <div class="row" id="gallery-container"></div> -->
+    <div class="parent" id="gallery-container"></div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" style="width:100%" />
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        let gallery = document.querySelector('#gallery-container');
+        for (let i = 1; i <= 31; i++) {
+            let iDiv = document.createElement('div');
+            //iDiv.className = 'column';
+            let imgEl = document.createElement("img");
+            imgEl.setAttribute("src", "assets/illustrations/" + i + ".jpg");
+            imgEl.setAttribute("width", "100%");
+            imgEl.setAttribute("onclick", "currentSlide(" + i + ")");
+            // imgEl.classList.add("demo", "cursor");
+            imgEl.classList.add("child", "cursor");
+            iDiv.appendChild(imgEl);
+            gallery.appendChild(iDiv);
+        }
+
+        // var slideIndex = 1;
+        // showSlides(slideIndex);
+
+        // function plusSlides(n) {
+        //     showSlides(slideIndex += n);
+        // }
+
+        function currentSlide(n) {
+            let modalImg = document.querySelector('#modal-img');
+            modalImg.setAttribute("src", "assets/illustrations/" + n + ".jpg");
+            modal.style.display = "block";
+        }
+
+        // function showSlides(n) {
+        //     var i;
+        //     var slides = document.getElementsByClassName("mySlides");
+        //     var dots = document.getElementsByClassName("demo");
+        //     var captionText = document.getElementById("caption");
+        //     if (n > slides.length) { slideIndex = 1 }
+        //     if (n < 1) { slideIndex = slides.length }
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     for (i = 0; i < dots.length; i++) {
+        //         dots[i].className = dots[i].className.replace(" active", "");
+        //     }
+        //     slides[slideIndex - 1].style.display = "block";
+        //     dots[slideIndex - 1].className += " active";
+        //     captionText.innerHTML = dots[slideIndex - 1].alt;
+        // }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

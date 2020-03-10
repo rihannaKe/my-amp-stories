@@ -1,10 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Caladea:400i&display=swap" rel="stylesheet">
+   
+
+    <style amp-custom="">
+        amp-story {
+            font-family: 'Caladea', serif;
+        }
+
+        amp-story-page * {
+            color: darkgrey;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        amp-story-page {
+            background-image: radial-gradient(white, #ffcea8);
+        }
+
+        amp-story-grid-layer {
+            padding: 68px 32px 32px;
+        }
+
+        #slide_3  img{
+            height: 100%;
+        }
+        /* div {
+        height: 100vw;
+        background-color: blue;
+        background-image:
+            radial-gradient(
+            yellow,
+            #f06d06
+            );
+        } */
+    </style>
+</head>
 </head>
 
 <body>
-    <h2>Biography</h2>
+    <amp-story standalone supports-landscape title="Rihanna - AMP Stories" publisher="Rihanna Kedir"
+        publisher-logo-src="https://amp.dev/favicons/coast-228x228.png"
+        poster-portrait-src="https://amp.dev/static/samples/img/story_dog2_portrait.jpg"
+        poster-square-src="https://amp.dev/static/samples/img/story_dog2_square.jpg"
+        poster-landscape-src="https://amp.dev/static/samples/img/story_dog2_landscape.jpg">
+
+        <amp-story-page id="cover">
+            <amp-story-grid-layer>
+                <amp-img alt="Rihanna Kedir" src="assets/illustro2.jpg" width="1" height="1" layout="responsive">
+                </amp-img>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_1">
+                <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                        <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                        animate-in-delay="0.5s"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer  position="landscape-half-right" template="thirds">
+                <h3 grid-area="middle-third" animate-in="fade-in" animate-in-duration="2.5s">
+                        I wanted to do something creative & international</h3>
+            </amp-story-grid-layer>
+
+            <!-- <amp-story-grid-layer template="fill">
+                <amp-img src="assets/cover.jpg" width="720" height="1280" layout="responsive">
+                </amp-img>
+            </amp-story-grid-layer> -->
+        </amp-story-page>
+
+        <amp-story-page id="slide_2">
+                <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                        <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                        animate-in-delay="0.5s"></amp-img>
+            </amp-story-grid-layer>
+                <amp-story-grid-layer  position="landscape-half-right" template="thirds">
+                        <h3 grid-area="middle-third" animate-in="fade-in" animate-in-duration="2.5s">
+                    Right from after high school I was working as accountant with a permament job
+                </h3>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_3"  >
+            <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                <amp-img src="assets/slide3/shoe.png"         height="1" layout="fixed-height" animate-in="fly-in-left" animate-in-delay="0.3s" animate-in-duration="0.5s"></amp-img>
+                <amp-img src="assets/slide3/bag.png"          height="1" layout="fixed-height" animate-in="drop" animate-in-delay="0.8s" animate-in-duration="0.5s"></amp-img>
+                <amp-img src="assets/slide3/dress.png"        height="1" layout="fixed-height" animate-in="whoosh-in-left" animate-in-delay="0.12s" ></amp-img>
+                <amp-img src="assets/slide3/earing-left.png"  height="1" layout="fixed-height" animate-in="drop" animate-in-delay="0.17s" animate-in-duration="0.5s"></amp-img>
+                <amp-img src="assets/slide3/earing-right.png" height="1" layout="fixed-height" animate-in="drop" animate-in-delay="0.22s" animate-in-duration="0.5s"></amp-img>
+                <amp-img src="assets/slide3/necklace.png"     height="1" layout="fixed-height" animate-in="drop" animate-in-delay="0.27s" animate-in-duration="0.5s"></amp-img>
+                <amp-img src="assets/slide3/hat.png"          height="1" layout="fixed-height" animate-in="drop" animate-in-delay="0.32s" animate-in-duration="0.5s"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer  position="landscape-half-right" template="thirds">
+                <h3 grid-area="middle-third" animate-in="fade-in" >
+                    Meanwhile I founded Rihan Design, a small fashion company. I use to design from the fabric to the
+                    final
+                    cloth/ accessories
+                </h3>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_4">
+            <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                        <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                        animate-in-delay="0.5s"></amp-img>
+                        <amp-img src="assets/slide4/book2.png" height="1" layout="fixed-height" animate-in="drop"
+                            animate-in-delay="0.10s" ></amp-img>
+                        <amp-img src="assets/slide4/book3.png" height="1" layout="fixed-height" animate-in="drop" 
+                            animate-in-delay="0.5s" ></amp-img>
+                        <amp-img src="assets/slide4/hat.png"  height="1" layout="fixed-height" animate-in="drop" 
+                            animate-in-delay="0.15s" ></amp-img>
+                    </amp-story-grid-layer>
+            <amp-story-grid-layer position="landscape-half-right" template="thirds" animate-in-duration="2.5s">
+                <h3 grid-area="middle-third">
+                    After 4 years i left my permament accounting job and got to Rome to persue my bachleor degree
+                </h3>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_5">
+            <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                        <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                        animate-in-delay="0.5s"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer position="landscape-half-right" template="thirds" animate-in-duration="2.5s">
+                <h3 grid-area="middle-third" animate-in="fade-in" >
+                        The second year my financial state was bad, I need to work. I was looking for different part time
+                        jobs
+                        of any kind.
+                        But then I got an offer, to work as designer and pattern maker in a fashion company
+                </h3>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_6">
+                <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                        <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                        animate-in-delay="0.5s"></amp-img>
+            </amp-story-grid-layer>
+                <amp-story-grid-layer position="landscape-half-right" template="thirds" animate-in-duration="2.5s">
+                    <h3 grid-area="middle-third" animate-in="fade-in" >
+                        I worked for three years, and meanwhile I was stuggling wiht the last exams. I got a permament job
+                        offer. But I preffered the company
+                        and founded Kef Zyk, I use to make bags and sell online and on aritisian markets.
+                        Then I started an internship, with less than half salary of what I was offered.
+                    </h3>
+                </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="slide_7">
+            <amp-story-grid-layer template="fill" position="landscape-half-left" layout="container">
+                <amp-img src="assets/slide4/book1.png" height="1" layout="fixed-height" animate-in="drop" 
+                animate-in-delay="0.5s"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer position="landscape-half-right" template="thirds"animate-in-duration="2.5s">
+                <h3 grid-area="middle-third" animate-in="fade-in" >
+                    Is been more than 5 years now that I working as full time software enginner. And I love it.
+                </h3>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-bookend src="https://amp.dev/static/samples/json/bookend.json" layout="nodisplay">
+        </amp-story-bookend>
+
+    </amp-story>
 </body>
 
 </html>

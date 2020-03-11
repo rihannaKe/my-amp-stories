@@ -1,0 +1,500 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <title>Introduction - Cloud Developer Certification </title>
+  <link rel="canonical" href="intro.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+  </noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-video-iframe" src="https://cdn.ampproject.org/v0/amp-video-iframe-0.1.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:200,300,400" rel="stylesheet">
+  <style amp-custom>
+    amp-story {
+      font-family: 'Noto Sans', sans-serif;
+      color: lightgray;
+    }
+
+    amp-story-page {
+      background-color: white;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 2.875em;
+      font-weight: normal;
+      line-height: 1.174;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
+
+    q {
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+
+    amp-story-grid-layer.top {
+      -ms-flex-line-pack: start;
+      align-content: start;
+      -ms-flex-align: start;
+      align-items: start
+    }
+
+    amp-story-grid-layer.center {
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+    amp-story-cta-layer.center {
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    amp-story-grid-layer.bottom {
+      -ms-flex-line-pack: end;
+      align-content: end;
+      -ms-flex-align: end;
+      align-items: end
+    }
+
+    amp-story-grid-layer.center-text {
+      align-content: center;
+    }
+
+
+    amp-story-cta-layer.mobile-only {
+      display: block;
+    }
+
+    amp-story-cta-layer {
+      margin-bottom: 60px;
+    }
+
+    /* generic styling*/
+    .center-content {
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .text-center {
+      text-align: center;
+      margin: 0 auto;
+      width: auto
+    }
+
+    .noedge {
+      padding: 0;
+    }
+
+
+
+
+    .desktop-only {
+      display: none;
+    }
+
+    .mobile-only {
+      display: block;
+    }
+
+    
+
+    .img-inner {
+      flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+
+    .img-outer {
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+   
+
+    .gradient-top-40 {
+      background: linear-gradient(to top, transparent, transparent 40%, rgba(0, 0, 0, 0.8));
+    }
+
+    .gradient-bottom {
+      background: linear-gradient(to bottom, transparent, transparent 15%, rgba(0, 0, 0, 0.75));
+    }
+
+    .gradient-top {
+      background: linear-gradient(to top, transparent, transparent 60%, rgba(0, 0, 0, 0.8));
+    }
+
+    .gradient-bottom-start {
+      background: linear-gradient(to bottom, transparent, transparent 15%, rgba(0, 0, 0, 0.35));
+    }
+
+    .padBtm {
+      padding-bottom: 60px
+    }
+
+    .padTop {
+      padding-top: 80px
+    }
+
+   
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }
+
+    .fdark {
+      color: darkblue;
+    }
+
+    .banner-text {
+      text-align: center;
+      background-color: #000;
+      line-height: 2em;
+    }
+
+    .gradient-bottom {
+      background: linear-gradient(to bottom, transparent, transparent 75%, rgba(0, 0, 0, 0.65));
+    }
+
+    /* theming */
+    .back-drop-dark {
+      background: rgba(33, 33, 33, 0.50);
+    }
+    .back-drop-light {
+      background:  rgba(255, 255, 255, .75);
+    }
+    .highlight-dark span {
+      background-color: rgba(0, 0, 0, .75);
+    }
+    .highlight-light span {
+      background-color: rgba(255, 255, 255, .75);
+    }
+
+    /* links */
+    .link-btn {
+      display: flex
+    }
+
+    .link-btn a {
+      display: inline-block;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      line-height: 18px;
+      text-decoration: none;
+      padding: 15px 30px;
+    }
+
+    .link-btn.link-dark a{
+      border: 1px solid #fff;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .link-btn.link-light a{
+      border: 1px solid #000;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    @media(min-width:750px) {
+
+      .link-btn a {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px 35px
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Cover page -->
+  <amp-story standalone supports-landscape title="Introduction to the Course" publisher="GDG"
+    publisher-logo-src="gdgromeh.svg"
+    poster-portrait-src="https://storage.googleapis.com/gweb-cloudblog-publish/images/GCP_expansion_5SWuBUH.max-2200x2200.jpg">
+
+
+    <amp-story-page id="cover" class="fdark">
+      <amp-story-grid-layer template="fill">
+        <amp-img
+          src="https://storage.googleapis.com/gweb-cloudblog-publish/images/GCP_expansion_5SWuBUH.max-2200x2200.jpg"
+          width="1920" height="1280" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>Course for Professional Cloud Developer Certification</h1>
+        <p>It is aimed at obtaining the Professional Cloud Developer Certification, in the most pleasant, productive and
+          congenial way for you. And free.
+          It is designed within the Google Developers Communities.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Page1  IMMAGINE di sfondo Learn -->
+    <amp-story-page id="learn" background-audio="">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9" width="720" height="1280"
+          layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds" class="gradient-bottom">
+        <h1 grid-area="upper-third">How to learn</h1>
+      </amp-story-grid-layer>
+      <amp-story-cta-layer class="text-center ">
+            <p grid-area="lower-third" class="highlight-dark">
+                <span> The very first step is to learn how to learn: <a
+                  style="color:white" href="https://medium.com/@blasetta/learn-and-change-in-your-way-2a0e13106034">in this
+                 article you will find
+               a lot of TIPS.</a>
+          <br />Get the skills you want. With fun. For business or just leisure.
+          <br />
+        </span>
+      </p>
+      </amp-story-cta-layer>
+    </amp-story-page>
+
+    <!-- **** PAGINA 2 classroom  VIDEO  -->
+    <amp-story-page id="classroom">
+      <amp-story-grid-layer template="fill">
+        <amp-youtube data-videoid="DbBsr5vP_qM" layout="responsive" width="480" height="270" autoplay
+          data-param-autoplay="1" data-param-loop="1" data-param-start="0" data-param-end="14" data-param-mute="1"
+          data-param-controls="1">
+        </amp-youtube>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1></h1>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom padBtm center">
+        <p class="highlight-dark">
+          <span>
+            The course includes material of various kinds: articles, videos, laboratories,
+            tests similar to those of the
+            exam.It is organized with <a style="color:crimson" href="https://classroom.google.com/">Google
+              Classrooms</a>
+          </span>
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- **** PAGINA 2 classroom  QWIK  -->
+    <amp-story-page id="QWIK">
+      <amp-story-grid-layer template="fill">
+        <amp-youtube data-videoid="cyp7soKLOYI" layout="responsive" width="480" height="270" autoplay
+          data-param-start="0" data-param-controls="1" data-param-autoplay="1" data-param-loop="1" data-param-start="08"
+          data-param-end="16" data-param-mute="1">
+        </amp-youtube>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1></h1>
+      </amp-story-grid-layer>
+      <amp-story-cta-layer class="center-content">
+          <div class="link-btn link-dark text-center">
+            <a href="https://www.youtube.com/watch?v=cyp7soKLOYI"> Labs Qwiklabs - see the video</a>
+          </div>
+        </amp-story-cta-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo  -->
+    <amp-story-page id="img1">
+      <amp-story-grid-layer class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="16" height="9" src="assets/y1000x562.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+
+    <!--   IMMAGINE di sfondo certlady  -->
+    <amp-story-page id="img2" class="noedge">
+      <amp-story-grid-layer template="fill">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certlady.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo certmaterial -->
+    <amp-story-page id="img3">
+      <amp-story-grid-layer template="fill" class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certmaterial.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo certpage  -->
+    <amp-story-page id="img4">
+      <amp-story-grid-layer template="fill" class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certpage.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo certprof  -->
+    <amp-story-page id="img5">
+      <amp-story-grid-layer template="fill" class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certprof.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo certdoc  -->
+    <amp-story-page id="img6">
+      <amp-story-grid-layer template="fill" class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certdoc.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!--   IMMAGINE di sfondo certyoutube  -->
+    <amp-story-page id="img7">
+      <amp-story-grid-layer template="fill" class="noedge">
+        <div class="img-outer">
+          <amp-img class="img-inner" layout="responsive" width="3" height="2" src="assets/certyoutube.jpg"></amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds">
+        <h1 grid-area="upper-third"></h1>
+        <p grid-area="lower-third"></p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+
+    <amp-story-page id="page_8">
+      <amp-story-grid-layer template="fill">
+        <amp-video controls width="640" height="360" layout="responsive">
+          <source src="assets/cook.mp4" type="video/mp4" />
+        </amp-video>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- **** PAGINA Video Youtube  ***** -->
+    <amp-story-page id="final">
+      <amp-story-grid-layer template="fill">
+        <amp-youtube data-videoid="Kub0oH6TFKw" layout="responsive" width="480" height="270" autoplay
+          data-param-autoplay="1" data-param-start="166" data-param-mute=1>
+        </amp-youtube>
+      </amp-story-grid-layer>
+      <amp-story-cta-layer class="center-content">
+        <div class="link-btn link-dark text-center">
+          <a>Enroll at this link</a>
+        </div>
+      </amp-story-cta-layer>
+    </amp-story-page>
+
+    <!-- Bookend -->
+    <amp-story-bookend src="assets/bookend.json" layout="nodisplay"></amp-story-bookend>
+  </amp-story>
+</body>
+
+</html>
